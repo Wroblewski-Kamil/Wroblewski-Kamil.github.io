@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -309,10 +310,115 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-size: 16px; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.5rem; }
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 3rem; }
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.75rem; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e3e6ea;
+  padding: 128px; }
+
+.header {
+  max-width: 50vw; }
+  .header__avatar {
+    width: 120px;
+    height: auto;
+    border-radius: 60px;
+    border: 6px solid rgba(0, 0, 0, 0.103);
+    padding: 4px; }
+  .header__description {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-right: 100px;
+    line-height: 2.25rem; }
+  .header__mail {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    border-bottom: 2px solid blue;
+    padding-bottom: 8px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content; }
+
+.skills {
+  margin-top: 200px; }
+  .skills__title {
+    border-bottom: 2px solid #cbd2d985;
+    padding-bottom: 16px; }
+    .skills__title--1 {
+      margin: 0; }
+      .skills__title--1:before {
+        content: "";
+        display: block;
+        bottom: 24px;
+        width: 80px;
+        height: 4px;
+        background: #06C847;
+        border-radius: 8px;
+        margin-bottom: 1.5rem; }
+    .skills__title--2 {
+      margin: 0; }
+      .skills__title--2:before {
+        content: "";
+        display: block;
+        bottom: 24px;
+        width: 80px;
+        height: 4px;
+        background: #653CAD;
+        border-radius: 8px;
+        margin-bottom: 1.5rem; }
+    .skills__title--3 {
+      margin: 0; }
+      .skills__title--3:before {
+        content: "";
+        display: block;
+        bottom: 24px;
+        width: 80px;
+        height: 4px;
+        background: #2251cc;
+        border-radius: 8px;
+        margin-bottom: 1.5rem; }
+  .skills__grid {
+    margin-top: 128px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-row-gap: 128px; }
+  .skills__list {
+    padding-top: 24px; }
+    .skills__list--primary {
+      list-style-image: url("../assets/img/checked-g.svg"); }
+    .skills__list--secondary {
+      list-style-image: url("../assets/img/checked-p.svg"); }
+    .skills__list--tertiary {
+      list-style-image: url("../assets/img/checked-b.svg"); }
+  .skills li {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2.5rem; }
 
 /*# sourceMappingURL=main.css.map */
