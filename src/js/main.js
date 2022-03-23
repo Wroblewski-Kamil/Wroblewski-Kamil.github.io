@@ -13,7 +13,7 @@ fetch('https://api.github.com/users/wroblewski-kamil/repos?sort=update&direction
       const {html_url, name, description, homepage} = repo;
       list.innerHTML += `
       <li class="projects__list--item">
-      <img class="projects__list--img" src="assets/img/github icon.svg">
+      <img class="projects__list--img" src="assets/img/Github Icon.svg">
       <h4 class="projects__list--link">${name}</h4>
       <p class="projects__list--description">${description ? description : "brak opisu"}</p>
       <div class="projects__links">
