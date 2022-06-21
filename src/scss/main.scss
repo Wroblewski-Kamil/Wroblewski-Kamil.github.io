@@ -6,6 +6,9 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   scroll-behavior: smooth;
+  @media (max-width: 640px){
+    font-size: 14px;
+  }
 }
 
 *,
@@ -52,7 +55,11 @@ body {
 
 .header {
   margin:128px 0px 0px 128px ;
-  max-width: 50vw;
+  // max-width: 50vw;
+  @media (max-width:640px){
+    margin: 4rem 4rem 0 4rem;
+    // max-width: 100vw;
+  }
   &__avatar {
     width: 120px;
     height: auto;
@@ -63,7 +70,10 @@ body {
   &__title {
   }
   &__description {
-    padding-right: 100px;
+    padding-right: 6rem;
+    @media (max-width:640px){
+      padding-right: 0;
+    }
   }
   &__mail {
     margin-top: 60px;
@@ -77,7 +87,10 @@ body {
 }
 
 .skills {
-  margin: 200px 128px 0 128px;
+  margin: 12rem 8rem 0 8rem;
+  @media (max-width:640px){
+    margin: 6rem 4rem 0 4rem;
+  }
   &__title {
     border-bottom: 2px solid #cbd2d985;
     padding-bottom: 16px;
@@ -127,6 +140,9 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-row-gap: 128px;
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__list {
     padding-top: 24px;
@@ -151,13 +167,17 @@ body {
   margin-top: 168px;
   padding: 0 128px 128px 128px;
   background-color: #F5F7FA;
+  // min-width: 100vw;
+  @media (max-width:640px){
+    padding: 0 3rem 8rem 3rem;
+  }
   &__title {
     padding-top: 128px;
     margin-bottom: 16px;
     margin-top: 0;
   }
   &__description {
-    max-width: 40vw;
+    // max-width: 40vw;
     margin-top: 16px;
   }
   &__list {
@@ -171,6 +191,9 @@ body {
         text-align: justify;
         grid-gap: 24px;
       
+    }
+    @media (max-width:880px){
+      grid-template-columns: 1fr;
     }
     &--item {
       background: #fff;
@@ -197,6 +220,7 @@ body {
       line-height: 2rem;
       margin-top:8px;
       margin-left:48px;
+      margin-right: 48px;
     }
   }
   &__links{
@@ -234,10 +258,14 @@ body {
 }
 
 .contact{
-  height: 562px;
+  // height: 562px;
+  // max-width: 100vw;
   background-color: #171F3F;
   &__content{
     padding: 128px 128px 24px 128px;
+    @media (max-width:640px){
+      padding: 64px 64px 24px 64px;
+    }
     &--title {
       color: #F5F7FA;
       margin-bottom: 16px;
@@ -267,9 +295,9 @@ body {
       color: #0593FB;
       border-bottom: 2px solid #0593FB;
       padding-bottom: 8px;
-      max-width: fit-content;
       font-size: 1.25rem;
       font-weight: 500;
+      overflow-wrap: break-word;
     }
   }
 }
